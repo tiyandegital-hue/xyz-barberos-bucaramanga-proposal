@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="es-CO">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Simulador del bot WhatsApp — XYZ Barberos Bucaramanga | Demo interactiva</title>
+<meta name="description" content="Demo interactiva: simulador del asistente virtual de WhatsApp para XYZ Barberos. Reserva, recordatorios, reprogramación y tarifas — todo simulado, 100% interactivo.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Anton&family=Inter:wght@400;500;600;700&family=Space+Mono:wght@400;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/site.css">
+</head>
+<body data-page="demo-bot">
+
+<div class="demo-banner" role="note"><div class="wrap">
+<span><span class="pulse" aria-hidden="true"></span>DEMO CONCEPTUAL — PROPUESTA POR TIYAN DIGITAL PARA <span data-bname>XYZ Barberos</span> (BUCARAMANGA) — PRECIOS Y HORARIOS [EJEMPLO]</span>
+<span>SISTEMA V1.0 / ESTADO: ACTIVO</span>
+</div></div>
+
+<header class="nav"><div class="wrap nav-inner">
+<a class="brand" href="../" aria-label="XYZ Barberos — inicio">
+<span class="brand-mark" aria-hidden="true">X</span>
+<span><span class="brand-name" data-bname>XYZ Barberos</span><br><span class="brand-sub">BUCARAMANGA · NOCHE BARBER</span></span></a>
+<button class="burger" id="burger" aria-label="Abrir menú" aria-expanded="false">☰</button>
+<nav class="nav-links" id="navLinks" aria-label="Principal">
+<a data-nav="inicio" href="../">Inicio</a>
+<a data-nav="demo-bot" href="../demo-bot/">Bot interactivo</a>
+<a data-nav="como-funciona" href="../como-funciona/">Cómo funciona</a>
+<a data-nav="planes" href="../planes/">Planes</a>
+<a data-nav="contacto" href="../contacto/">Contacto</a>
+</nav>
+<span class="rating-chip" title="Calificación verificada en Google">⭐ <b>5.0</b> (16 REVIEWS) GOOGLE</span>
+<a class="btn btn-red btn-sm nav-cta" href="../demo-bot/">Probar bot WhatsApp</a>
+</div></header>
+
+<main>
+<section class="hero" aria-labelledby="demoH">
+<div class="ghost small" aria-hidden="true">BGA</div>
+<div class="wrap hero-inner">
+<div class="eyebrow reveal">
+<span><span class="dot">●</span> DEMO INTERACTIVA EN VIVO</span>
+<span class="tag">TIEMPO RESPUESTA &lt; 3.2s <span class="ejemplo">[EJEMPLO]</span></span>
+<span class="tag">HORA NOCTURNA: 11:30 PM</span>
+<span class="tag">[SIMULACIÓN — NO ES UN CHAT REAL]</span>
+</div>
+<h1 class="display reveal" id="demoH">Simulador de asistente virtual <span style="color:var(--red)">WhatsApp</span></h1>
+<p class="lead reveal" style="margin-top:1.2rem">Esto es una <strong>simulación interactiva</strong>: el chat de abajo reproduce cómo respondería el bot real de <strong data-bname>XYZ Barberos</strong>. Toca las respuestas rápidas y recorre 4 escenarios.</p>
+</div>
+</section>
+
+<section class="sec" style="padding-top:0" aria-label="Simulador">
+<div class="wrap">
+<div class="scen-tabs reveal" role="tablist" aria-label="Escenarios del bot">
+<button class="scen-tab active" data-scen="reservar" role="tab" aria-selected="true">1. Reservar cita</button>
+<button class="scen-tab" data-scen="recordatorio" role="tab" aria-selected="false">2. Recordatorio 24h</button>
+<button class="scen-tab" data-scen="reprogramar" role="tab" aria-selected="false">3. Reprogramar</button>
+<button class="scen-tab" data-scen="tarifas" role="tab" aria-selected="false">4. Tarifas y sede</button>
+</div>
+
+<div class="phone-stage">
+<div class="phone reveal" aria-label="Teléfono con simulación de WhatsApp">
+<div class="phone-screen">
+<div class="phone-head">
+<div class="row1"><span>11:32 PM</span><span>🔒 DEMO CONCEPTUAL [EJEMPLO]</span></div>
+<div class="row2">
+<span class="avatar" aria-hidden="true">X</span>
+<div class="who"><b data-bname>XYZ Barberos</b><span>En línea · Bot Asistente</span></div>
+</div>
+</div>
+<div class="chat-log" id="chatLog" aria-live="polite" aria-label="Conversación simulada"></div>
+<div class="chat-status" id="chatStatus">INICIANDO DEMO…</div>
+<div class="chip-row" id="chipRow" aria-label="Respuestas rápidas"></div>
+<div class="chat-input"><input type="text" placeholder="Escribe un mensaje… (demo: usa las respuestas rápidas)" disabled aria-label="Entrada desactivada en la demo"><button type="button" aria-label="Enviar (desactivado en demo)" disabled>➤</button></div>
+<div class="chat-ctrl">
+<button class="btn btn-red btn-sm" id="btnPlay" type="button">▶ Reproducir</button>
+<button class="btn btn-outline btn-sm" id="btnRestart" type="button">↺ Reiniciar chat</button>
+</div>
+</div>
+</div>
+
+<div class="side-list">
+<div class="side-item reveal"><h3>¿Cómo funciona por dentro?</h3>
+<p style="margin-top:.6rem">· Responde en segundos, 24/7 — incluso a las 11:30 PM.<br>
+· Guarda tus citas y sincroniza la agenda en tiempo real.<br>
+· Te recuerda y reduce ausencias sin que muevas un dedo.</p>
+<p class="ejemplo" style="margin-top:.8rem">Explicación en lenguaje simple — sin promesas sobre modelos de IA específicos.</p></div>
+<div class="side-item reveal"><h3>Tiyan Engine V1</h3>
+<p style="margin-top:.6rem">· <b style="color:var(--ink)">Meta WhatsApp API</b> — canal oficial de mensajería.<br>
+· <b style="color:var(--ink)">Google Calendar</b> — sincronización de agenda.<br>
+· <b style="color:var(--ink)">Alertas críticas</b> — Yorguin ve todo lo importante al instante.</p></div>
+<div class="side-item reveal"><h3>Control total</h3>
+<p style="margin-top:.6rem"><b style="color:var(--ink)">Cero fricción</b> — agenda 24/7.<br>
+<b style="color:var(--ink)">Sin instalar apps</b> — todo pasa en WhatsApp.<br>
+<b style="color:var(--ink)">Yorguin tiene el control</b> — pausa, edita o toma el chat cuando quiera.</p></div>
+<div class="reveal"><a class="btn btn-red" href="../contacto/">Cotizar automatización →</a>
+<a class="btn btn-ghost" href="../planes/">Ver planes y precios</a></div>
+</div>
+</div>
+
+<div class="stats-row reveal" aria-label="Métricas estimadas">
+<div><div class="n"><em>+42%</em></div><div class="l">Conversión noche [EJEMPLO]</div></div>
+<div><div class="n"><em>−15 h</em>/sem</div><div class="l">Tiempo barbero ahorrado [EJEMPLO]</div></div>
+<div><div class="n"><em>−80%</em></div><div class="l">Ausentismo [EJEMPLO]</div></div>
+</div>
+<p class="sim-note reveal">Métricas generadas por el modelo de demostración — estimaciones, no resultados medidos. <span class="ejemplo">[EJEMPLO]</span></p>
+</div>
+</section>
+</main>
+
+<footer>
+<div class="wrap">
+<div class="foot-grid">
+<div>
+<h4 data-bname>XYZ Barberos</h4>
+<p><span data-bname>XYZ Barberos</span> · <span data-bcity>Bucaramanga</span>, Santander, Colombia<br>
+Sede principal — Carrera 9 #42-69, <span data-bcity>Bucaramanga</span>, Colombia<br>
+Propietario: Yorguin Vargas · Reserva previa requerida</p>
+</div>
+<div>
+<h4>Propuesta</h4>
+<p><a href="../">Inicio</a><br><a href="../como-funciona/">Cómo funciona</a><br><a href="../planes/">Planes</a><br><a href="../contacto/">Contacto</a></p>
+</div>
+<div>
+<h4>Diseño y arquitectura</h4>
+<p>Tiyan Digital<br><span data-bname>XYZ Barberos</span> — Propuesta de automatización táctica, agendamiento nocturno y captación directa para barberías premium.</p>
+</div>
+</div>
+<div class="legal">
+<div class="row"><span>© <span data-fyear>2026</span> <span data-bname>XYZ Barberos</span> <span data-bcity>Bucaramanga</span> · Desarrollado por Tiyan Digital</span><span><span data-bcity>Bucaramanga</span> · Noche turno</span></div>
+<p>Descargo legal — Horarios y precios marcados como [EJEMPLO]. Este prototipo digital es de uso exclusivo y demostrativo desarrollado por Tiyan Digital. Propuesta técnica y operativa activa.</p>
+</div>
+</div>
+</footer>
+<script src="../assets/site.js"></script>
+</body>
+</html>

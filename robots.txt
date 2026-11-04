@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# TODO(deploy): replace xyz-barberos-bucaramanga-proposal.vercel.app with the live Vercel URL
+Sitemap: https://xyz-barberos-bucaramanga-proposal.vercel.app/sitemap.xml
